@@ -1,0 +1,30 @@
+<h2>Register</h2>
+
+<form {{action "createUser" on="submit"}} role="form">
+  <div class="form-group">
+    <label>Full Name</label>
+    {{input type="text" value=name class="form-control" placeholder="Full Name"}}
+  </div>
+
+  <div class="form-group">
+    <label>Email Address</label>
+    {{input type="email" value=email class="form-control" placeholder="Email Address"}}
+  </div>
+
+  <div class="form-group">
+    <label>Username</label>
+    {{input type="text" value=username class="form-control" placeholder="Username"}}
+  </div>
+
+  <div class="form-group">
+    <label>Password</label>
+    {{input type="password" value=password class="form-control" placeholder="Password"}}
+  </div>
+
+  <div class="form-group">
+    <label>Confirm Password</label>
+    {{input type="password" value=password_confirmation class="form-control" placeholder="Confirm Password"}}
+  </div>
+
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>

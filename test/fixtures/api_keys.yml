@@ -1,0 +1,11 @@
+joe_session:
+  user: joe
+  access_token: <%= SecureRandom.hex %>
+  scope: 'session'
+  expired_at: <%= 4.hours.from_now %>
+
+jane_api:
+  user: jane
+  access_token: <%= SecureRandom.hex %>
+  scope: 'api'
+  expired_at: <%= 30.days.from_now %>
